@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <title> Contacto </title>
+</head>
+<body>
+
+    <!-- encabezado -->
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <a href="../index.html"><img src="../medios/logo-taiga.png" alt="Taiga"></a>
+        </div>
+        
+            <!-- menú de navegación -->
+        <nav>
+            <ul>
+                <li class="link-lista"><a href="./hogar.html"> Hogar </a></li>
+                <li class="link-lista"><a href="./jardin.html"> Jardín </a></li>
+                <li class="link-lista"><a href="./eventos.html"> Eventos </a></li>
+                <li class="link-lista"><a href="./nosotros.html"> Nosotros </a></li>
+                <li class="link-lista"><a class="seleccion" href="#"> Contacto </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- cuerpo principal -->
+    <main>
+        <h2 class="subtitulos"> Contacto </h2>
+        <!-- formulario -->
+        <section>
+            <h3 class="subtitulos-2"> Dejanos un mensaje </h3>
+            <form action="">
+                <div>
+                    <label for="name"> Nombre y apellido</label>
+                    <input type="text" name="" id="name">
+                </div>
+
+                <div>
+                    <label for="email"> Email </label>
+                    <input type="email" name="" id="email" placeholder="ejemplo@gmail.com">
+                </div>
+
+                <div>
+                    <label for="number"> Teléfono</label>
+                    <input type="number" name="" id="number">
+                </div>
+                
+                <div>
+                    <!-- Checkbox: +1 opcion -->
+                    <p>Selecionar asunto</p>
+                    <label for="hogar">Plantas para hogar</label>
+                    <input type="checkbox" name="asunto" id="hogar">
+                    <label for="jardin">Plantas para jardín</label>
+                    <input type="checkbox" name="asunto" id="jardin">
+                    <label for="eventos">Arreglos para eventos</label>
+                    <input type="checkbox" name="asunto" id="eventos">
+                    <label for="otro">Otro</label>
+                    <input type="checkbox" name="asunto" id="otro">
+                </div>
+
+                <div>
+                    <label for="">Escribí tu mensaje</label>
+                    <textarea name="" id="" cols="40" rows="10"></textarea>
+                </div>
+
+                <!-- Radio: solo permite 1 opcion -->
+                <p>¿Acepta términos y condiciones?</p>
+                <div>
+                    <label for="si">Aceptar</label>
+                    <input type="radio" name="terminos" id="">
+                    <label for="no">Rechazar</label>
+                    <input type="radio" name="terminos" id="">
+                </div>
+
+                <!-- Botones -->
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+            </form>
+
+        </section>
+
+        <section>
+            <h2>Nuestro local</h2>
+            <!-- mapa -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.451186857143!2d-74.06200492546803!3d4.863809340222901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8789800e3cbb%3A0x550c6785a4fa607b!2sTaiga!5e0!3m2!1ses!2sar!4v1702825189543!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <!-- pie de pagina -->
+    <footer>
+        <!-- info de contacto -->
+        <!-- redes sociales -->
+        <p>Seguinos</p>
+        <div class="footer">
+            <a href="../index.html"><img src="../medios/whatsapp-logo.png" alt="whatsapp"></a>
+            <img src="../medios/instagram-logo.png" alt="instagram">
+            <img src="../medios/facebook-logo.png" alt="facebook">
+            <img src="../medios/pinterest-logo.png" alt="pinterest">
+        </div>
+        <!-- info de copyright -->
+        <p>Copyright © 2023 TAIGA todos los derechos reservados</p>
+    </footer>
+    
+</body>
+</html>

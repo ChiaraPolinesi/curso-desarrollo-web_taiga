@@ -1,0 +1,259 @@
+/* Paleta de colores:
+.color1 amarillo { #bcc44c };
+.color2 crema { #ececcc };
+.color3 verde { #3c7c0c };
+.color4 violeta { #845ca4 };
+.color5 beige { #c4c494 }; */
+
+/* familia tipografica para texto */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+/* familia tipografica para titulares */
+@font-face {
+    font-family:'junicodebold';
+    src: url('/estilos/font/Junicode-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'junicodebolditalic';
+    src: url('/estilos/font/Junicode-BoldItalic.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* --- características de textos y subtítulos --- */
+html{
+    font-size: 62.5%;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+}
+.subtitulos{
+    font-family: 'junicodebolditalic';
+    font-style: normal;
+    font-size: 4.5rem;
+    text-align: center;
+    color: #899676;
+}
+.subtitulos-2{
+    font-family: 'junicodebold';
+    font-style: normal;
+    font-size: 3rem;
+    color: #3c7c0c;
+}
+
+/* ------ header con navegador ------ */
+header{
+    background-color: white;
+    width: 100%;
+    height: 190pxvh;
+    font-size: 1.8rem;
+    position: sticky;
+    top: 0px;
+}
+/* logo centrado en el header */
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header img{
+    margin-top: 25px;
+    width: 9vw;
+}
+/* menu de navegacion horizontal y centrado en el header */
+header ul{
+    font-family: 'junicodebold';
+    list-style: none;
+    font-weight: normal;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.link-lista{
+    padding: 10px;
+    margin: 0px 30px;
+}
+header a{
+    text-decoration: none;
+    color: #3c7c0c;
+}
+/* cambio de color en el link de la pagina seleccionada */
+.seleccion{
+    color: #845ca4;
+    border-bottom: 1px solid #845ca4;
+}
+
+/* --------------main de index--------------- */
+/* banner */
+.banner{
+    background-image: url(../medios/floresyplantasdeornato-2.png);
+    height: 80vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    height: 50vh;
+    font-family: 'junicodebolditalic';
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: #3c7c0c;
+    text-shadow: 3px 2px 3px rgba(126,124,118,0.72);
+    display: flex;
+}
+
+/* grid de index */
+main section h2{
+    grid-area: titulo;
+}
+main section img{
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+}
+main section p{
+    grid-area: texto;
+}
+main section h3{
+    grid-area: titulo2;
+}
+
+.grid-index{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 200px 650px;
+    grid-template-areas: 
+    "img titulo"
+    "img texto";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.grid-index2{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 200px 650px;
+    grid-template-areas: 
+    "titulo2 img"
+    "texto   img";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+.grid-item3{
+    font-size: 2rem;
+}
+.grid-item1{
+    display: flex;
+}
+
+/* ------------ grid de paginas ---------- */
+/* elementos hijos */
+main section div h3{
+    grid-area: titulo;
+}
+main section div img{
+    grid-area: img;
+}
+main section div p{
+    grid-area: texto;
+}
+main section div div{
+    grid-area: filtro;
+}
+/* grid */
+.grid-paginas{
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: 100px 250px;
+    grid-template-areas: 
+    "img img titulo titulo filtro"
+    "img img  texto texto  filtro";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
+}
+
+.grid-paginas2{
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: 100px 250px;
+    grid-template-areas: 
+    "filtro  titulo titulo img img"
+    "filtro  texto texto  img img";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
+}
+/* características de imagen en hogar */
+.hogar img{
+    width: 100%;
+    height: 100%;
+}
+/* filtros */
+.caracteristicas-plantas{
+    height: 100%;
+    border: #3c7c0c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.caracteristicas-plantas img{
+    width: 7vw;
+    height: 7vw;
+}
+.caracteristicas-plantas p{
+    font-size: 1.3rem;
+}
+
+/* -----------nosotros----------- */
+
+.nosotros img{
+    width: auto;
+}
+
+.seccion-lista ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+/* pie de pagina */
+footer p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'junicodebold';
+    font-size: 1.4rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+}
+
+footer img{
+    width: 50px;
+}
