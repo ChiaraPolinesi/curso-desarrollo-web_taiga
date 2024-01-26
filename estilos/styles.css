@@ -205,15 +205,13 @@ main section div div{
     gap: 50px;
     margin: 50px;
 }
-/* características de imagen en hogar */
-.hogar img{
-    width: 100%;
-    height: 100%;
-}
+
 /* filtros */
 .caracteristicas-plantas{
     height: 100%;
-    border: #3c7c0c;
+    border-width: 5px;
+    border-color: #3c7c0c;
+    border-style: solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,8 +227,21 @@ main section div div{
 
 /* -----------nosotros----------- */
 
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, 400px);
+    grid-template-areas: 
+    "titulo img"
+    "texto  img";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
 .nosotros img{
-    width: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .seccion-lista ul li{
