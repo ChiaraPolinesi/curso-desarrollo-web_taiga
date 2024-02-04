@@ -12,12 +12,12 @@
 /* familia tipografica para titulares */
 @font-face {
     font-family:'junicodebold';
-    src: url('/estilos/font/Junicode-Bold.ttf') format('truetype');
+    src: url('/estilos/font/junicode-bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'junicodebolditalic';
-    src: url('/estilos/font/Junicode-BoldItalic.ttf') format('truetype');
+    font-family:'junicodebolditalic';
+    src: url('/estilos/font/junicode-boldItalic.ttf') format('truetype');
 }
 
 *{
@@ -31,24 +31,24 @@ html{
     font-size: 62.5%;
 }
 p{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'montserrat', sans-serif;
     font-size: 1.6rem;
 }
-h2{
+h1{
     font-family: 'junicodebolditalic';
     font-style: normal;
     font-size: 4.5rem;
     text-align: center;
     color: #899676;
 }
-h3{
+h2{
     font-family: 'junicodebold';
     font-style: normal;
     font-size: 3rem;
     color: #3c7c0c;
 }
 .seccion-lista ul li{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'montserrat', sans-serif;
     font-size: 2rem;
 }
 
@@ -107,7 +107,7 @@ header a{
     background-size: cover;
     background-repeat: no-repeat;
 }
-h1{
+.banner h1{
     height: 50vh;
     font-family: 'junicodebolditalic';
     flex-direction: row;
@@ -283,6 +283,77 @@ main section div div{
     height: 100%;
 }
 
+/* -------------------contacto------------------- */
+main section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+form{
+    width: 40%;
+    height: 600px;
+    background-color: #845ca4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contacto-form-1{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-size: 1.2rem;
+    font-family: "montserrat";
+}
+.contacto-form-2{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-size: 1.2rem;
+    font-family: "montserrat";
+}
+.contacto-form-3{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-size: 1.2rem;
+    font-family: "montserrat";
+}
+.contacto-form-4{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-size: 1.2rem;
+    font-family: "montserrat";
+}
+.contacto-form-5{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-size: 1.2rem;
+    font-family: "montserrat";
+}
+.contacto-form-6{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    font-size: 1.2rem;
+    font-family: "montserrat";
+    justify-content: space-evenly;
+}
+.contacto-form-7{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    font-size: 1.2rem;
+    font-family: "montserrat";
+    justify-content: space-evenly;
+}
+.contacto-form-7 input{
+    width: 100px;
+}
 
 /* -------------------pie de pagina------------------- */
 footer p{
