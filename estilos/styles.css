@@ -288,7 +288,7 @@ main section div div{
 .nosotros{
     display: grid;
     grid-template-columns: repeat(2, 40%);
-    grid-template-rows: repeat(2, 400px);
+    grid-template-rows: 300px 500px;
     grid-template-areas: 
     "titulo img"
     "texto  img";
@@ -296,6 +296,12 @@ main section div div{
     align-content: center;
     justify-items: center;
     align-items: center;
+}
+.hijo-nosotros{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 60px;
 }
 .nosotros img{
     width: 100%;
