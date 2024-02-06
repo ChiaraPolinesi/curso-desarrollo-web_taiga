@@ -70,20 +70,20 @@ header img{
     width: 120px;
 }
 /* menu de navegacion horizontal y centrado en el header */
-header ul{
+.nav{
     font-family: 'junicodebold';
     list-style: none;
     font-weight: normal;
     font-style: normal;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
+    background-color: white;
 }
+
 .link-lista{
     padding: 10px;
     margin: 0px 30px;
 }
-header a{
+.a{
     text-decoration: none;
     color: #3c7c0c;
 }
@@ -98,10 +98,12 @@ header a{
 /* banner */
 .banner{
     background-image: url(../medios/floresyplantasdeornato-2.png);
-    height: 80vh;
-    width: 100vw;
+    height: 85vh;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
 .banner h1{
     height: 50vh;
@@ -407,10 +409,7 @@ footer img{
     header ul{
         display: none;
     }
-    .banner{
-        height: 85vh;
-        background-position: center;
-    }
+
     .grid-index-contenedor{
         display: grid;
         grid-template-columns: 90%;
