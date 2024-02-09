@@ -1,0 +1,23 @@
+// Paleta de colores:
+$caqui:#899676;
+$crema:#ececcc;
+$verde:#3c7c0c;
+$violeta:#845ca4;
+$beige:#c4c494;
+
+//familia tipografica para texto
+$font-text: 'Montserrat', sans-serif;
+
+// familia tipografica para titulares
+$font-title:'junicodebold';
+$font-italic: 'junicodebolditalic';
+$font-family: 'Junicode', sans-serif;
+                                                
+
+//mixin
+@mixin flex ($direccion, $justify, $aling){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $aling;
+}

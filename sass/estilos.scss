@@ -1,0 +1,41 @@
+@import "generales/variables";
+
+// estilos generales
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.cdnfonts.com/css/junicode');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+p{
+    font-family: $font-text;
+    font-size: 1.6rem;
+}
+h1{
+    font-family: $font-italic;
+    font-style: normal;
+    font-size: 4.5rem;
+    text-align: center;
+    color: $caqui;
+}
+h2{
+    font-family: $font-title;
+    font-style: normal;
+    font-size: 3rem;
+    color: $verde;
+}
+                
+
+@import "generales/headerfooter";
+@import "page/index";
+@import "page/hogar";
+@import "page/jardin";
+@import "page/eventos";
+@import "page/nosotros";
+@import "page/contacto";
+
+@import "generales/mediaq";
