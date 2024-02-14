@@ -132,6 +132,7 @@ main .grid-index-contenedor .grid-index-hijo1 {
 }
 main .grid-index-contenedor .grid-index-hijo2 {
   grid-area: img;
+  width: 100%;
   height: 100%;
   display: flex;
 }
@@ -167,6 +168,7 @@ main .grid-index-contenedor2 .grid-index-hijo4 {
 }
 main .grid-index-contenedor2 .grid-index-hijo5 {
   grid-area: img;
+  width: 100%;
   height: 100%;
   display: flex;
 }
@@ -550,6 +552,66 @@ main section .formulario .contacto-form-7 {
 }
 main section .formulario .contacto-form-7 input {
   width: 100px;
+}
+
+@media only screen and (max-width: 580px) {
+  header {
+    height: 100px;
+  }
+  header img {
+    width: 90px;
+  }
+  header ul {
+    display: none;
+  }
+  .grid-index-contenedor {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 100px 450px 150px 850px;
+    grid-template-areas: "img" "img" "titulo" "texto";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .grid-index-contenedor .grid-index-hijo3 {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .grid-index-contenedor2 {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 100px 450px 100px 800px;
+    grid-template-areas: "img" "img" "titulo2" "texto";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .grid-paginas-contenedor {
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 80px 300px 350px;
+    grid-template-areas: "titulo" "filtro" "img" "texto";
+    gap: 40px;
+    margin: 20px 30px;
+  }
+  .grid-paginas-contenedor .grid-paginas-hijo4 {
+    justify-content: center;
+  }
+  .grid-paginas-contenedor2 {
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 80px 250px 300px;
+    grid-template-areas: "titulo" "filtro" "img" "texto";
+    gap: 40px;
+    margin: 20px 20px;
+  }
+  .grid-paginas-contenedor2 .grid-paginas-hijo4 {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

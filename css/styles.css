@@ -411,6 +411,7 @@ footer img{
         gap: 30px;
     }
     .grid-index-hijo3{
+        grid-area: texto;
         width: 100%;
         height: 850px;
         display: flex;
