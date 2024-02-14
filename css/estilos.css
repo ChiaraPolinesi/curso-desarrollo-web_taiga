@@ -1,3 +1,4 @@
+/*estilos generales*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
 @import url("https://fonts.cdnfonts.com/css/junicode");
 * {
@@ -27,6 +28,528 @@ h2 {
   font-style: normal;
   font-size: 3rem;
   color: #3c7c0c;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  font-size: 1.8rem;
+  position: sticky;
+  top: 0px;
+}
+header .logo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+header .logo img {
+  margin-top: 25px;
+  width: 120px;
+}
+header .nav {
+  font-family: "junicodebold";
+  list-style: none;
+  font-weight: normal;
+  font-style: normal;
+  justify-content: center;
+  background-color: white;
+}
+header .nav .link-lista {
+  padding: 10px;
+  margin: 0px 30px;
+}
+header .nav .link-lista .a {
+  text-decoration: none;
+  color: #3c7c0c;
+}
+header .nav .link-lista .seleccion {
+  color: #845ca4;
+  border-bottom: 1px solid #845ca4;
+}
+
+footer p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "junicodebold";
+  font-size: 1.4rem;
+}
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px;
+}
+footer .footer img {
+  width: 50px;
+}
+
+main .banner {
+  background-image: url(../medios/floresyplantasdeornato-2.png);
+  height: 85vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+main .banner h1 {
+  height: 50vh;
+  font-family: "junicodebolditalic";
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #3c7c0c;
+  text-shadow: 3px 2px 3px rgba(126, 124, 118, 0.72);
+  display: flex;
+}
+main .grid-index-contenedor {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 200px 650px;
+  grid-template-areas: "img titulo" "img texto";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+}
+main .grid-index-contenedor .grid-index-hijo1 {
+  grid-area: titulo;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "junicodebolditalic";
+  font-style: normal;
+  font-size: 4.5rem;
+  text-align: center;
+  color: #899676;
+}
+main .grid-index-contenedor .grid-index-hijo2 {
+  grid-area: img;
+  height: 100%;
+  display: flex;
+}
+main .grid-index-contenedor .grid-index-hijo3 {
+  grid-area: texto;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  font-size: 2rem;
+}
+main .grid-index-contenedor2 {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 200px 650px;
+  grid-template-areas: "titulo2 img" "texto   img";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+}
+main .grid-index-contenedor2 .grid-index-hijo4 {
+  grid-area: titulo2;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-items: center;
+  align-items: flex-end;
+  font-family: "junicodebold";
+  font-style: normal;
+  font-size: 3rem;
+  color: #3c7c0c;
+}
+main .grid-index-contenedor2 .grid-index-hijo5 {
+  grid-area: img;
+  height: 100%;
+  display: flex;
+}
+main .grid-index-contenedor2 .grid-index-hijo6 {
+  grid-area: texto;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 50px;
+}
+main .grid-index-contenedor2 .grid-index-hijo6 li {
+  font-family: "montserrat", sans-serif;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+main .grid-paginas-contenedor {
+  display: grid;
+  grid-template-columns: repeat(5, 15%);
+  grid-template-rows: 100px 250px;
+  grid-template-areas: "img img titulo titulo filtro" "img img  texto texto  filtro";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo1 {
+  grid-area: titulo;
+  display: flex;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo2 {
+  grid-area: img;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo3 {
+  grid-area: texto;
+  display: flex;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo4 {
+  grid-area: filtro;
+  width: 100%;
+  height: 100%;
+  border-width: 5px;
+  border-color: #3c7c0c;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo4 img {
+  width: 7vw;
+  height: 7vw;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo4 h3 {
+  font-size: 1.3rem;
+}
+main .grid-paginas-contenedor2 {
+  display: grid;
+  grid-template-columns: repeat(5, 15%);
+  grid-template-rows: 100px 250px;
+  grid-template-areas: "filtro  titulo titulo img img" "filtro  texto texto  img img";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo1 {
+  grid-area: titulo;
+  display: flex;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo2 {
+  grid-area: img;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo3 {
+  grid-area: texto;
+  display: flex;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo4 {
+  grid-area: filtro;
+  width: 100%;
+  height: 100%;
+  border-width: 5px;
+  border-color: #3c7c0c;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo4 img {
+  width: 7vw;
+  height: 7vw;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo4 h3 {
+  font-size: 1.3rem;
+}
+
+main .grid-paginas-contenedor {
+  display: grid;
+  grid-template-columns: repeat(5, 15%);
+  grid-template-rows: 100px 250px;
+  grid-template-areas: "img img titulo titulo filtro" "img img  texto texto  filtro";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo1 {
+  grid-area: titulo;
+  display: flex;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo2 {
+  grid-area: img;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo3 {
+  grid-area: texto;
+  display: flex;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo4 {
+  grid-area: filtro;
+  width: 100%;
+  height: 100%;
+  border-width: 5px;
+  border-color: #3c7c0c;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo4 img {
+  width: 7vw;
+  height: 7vw;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo4 h3 {
+  font-size: 1.3rem;
+}
+main .grid-paginas-contenedor2 {
+  display: grid;
+  grid-template-columns: repeat(5, 15%);
+  grid-template-rows: 100px 250px;
+  grid-template-areas: "filtro  titulo titulo img img" "filtro  texto texto  img img";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo1 {
+  grid-area: titulo;
+  display: flex;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo2 {
+  grid-area: img;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo3 {
+  grid-area: texto;
+  display: flex;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo4 {
+  grid-area: filtro;
+  width: 100%;
+  height: 100%;
+  border-width: 5px;
+  border-color: #3c7c0c;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo4 img {
+  width: 7vw;
+  height: 7vw;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo4 h3 {
+  font-size: 1.3rem;
+}
+
+main .grid-paginas-contenedor {
+  display: grid;
+  grid-template-columns: repeat(5, 15%);
+  grid-template-rows: 100px 250px;
+  grid-template-areas: "img img titulo titulo filtro" "img img  texto texto  filtro";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo1 {
+  grid-area: titulo;
+  display: flex;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo2 {
+  grid-area: img;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo3 {
+  grid-area: texto;
+  display: flex;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo4 {
+  grid-area: filtro;
+  width: 100%;
+  height: 100%;
+  border-width: 5px;
+  border-color: #3c7c0c;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo4 img {
+  width: 7vw;
+  height: 7vw;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo4 h3 {
+  font-size: 1.3rem;
+}
+main .grid-paginas-contenedor2 {
+  display: grid;
+  grid-template-columns: repeat(5, 15%);
+  grid-template-rows: 100px 250px;
+  grid-template-areas: "filtro  titulo titulo img img" "filtro  texto texto  img img";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo1 {
+  grid-area: titulo;
+  display: flex;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo2 {
+  grid-area: img;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo3 {
+  grid-area: texto;
+  display: flex;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo4 {
+  grid-area: filtro;
+  width: 100%;
+  height: 100%;
+  border-width: 5px;
+  border-color: #3c7c0c;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo4 img {
+  width: 7vw;
+  height: 7vw;
+}
+main .grid-paginas-contenedor2 .grid-paginas-hijo4 h3 {
+  font-size: 1.3rem;
+}
+
+main .nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: 300px 500px;
+  grid-template-areas: "titulo img" "texto  img";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+main .nosotros .hijo-nosotros1 {
+  grid-area: titulo;
+}
+main .nosotros .hijo-nosotros2 {
+  grid-area: texto;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 60px;
+}
+main .nosotros .hijo-nosotros3 {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+}
+
+main section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .formulario {
+  color: aliceblue;
+  width: 40%;
+  height: 600px;
+  background-color: #845ca4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main section .formulario .contacto-form-1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-size: 1.2rem;
+  font-family: "montserrat";
+}
+main section .formulario .contacto-form-2 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-size: 1.2rem;
+  font-family: "montserrat";
+}
+main section .formulario .contacto-form-3 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-size: 1.2rem;
+  font-family: "montserrat";
+}
+main section .formulario .contacto-form-4 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-size: 1.2rem;
+  font-family: "montserrat";
+}
+main section .formulario .contacto-form-5 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-size: 1.2rem;
+  font-family: "montserrat";
+}
+main section .formulario .contacto-form-6 {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  font-size: 1.2rem;
+  font-family: "montserrat";
+  justify-content: space-evenly;
+}
+main section .formulario .contacto-form-7 {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  font-size: 1.2rem;
+  font-family: "montserrat";
+  justify-content: space-evenly;
+}
+main section .formulario .contacto-form-7 input {
+  width: 100px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

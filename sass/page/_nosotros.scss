@@ -1,0 +1,29 @@
+main{
+    .nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: 300px 500px;
+        grid-template-areas: 
+        "titulo img"
+        "texto  img";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        .hijo-nosotros1{
+            grid-area: titulo;
+        }
+        .hijo-nosotros2{
+            grid-area: texto;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            margin: 60px;
+        }
+        .hijo-nosotros3{
+            grid-area: img;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

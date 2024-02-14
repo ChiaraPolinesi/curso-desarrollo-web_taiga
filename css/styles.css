@@ -1,20 +1,20 @@
 /* familia tipografica para texto */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
-/* font-family: 'Montserrat', sans-serif; */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+font-family: 'Montserrat', sans-serif; */
 
 /* familia tipografica para titulares */
-@font-face {
+/* @font-face {
     font-family:'junicodebold';
     src: url('/estilos/font/junicode-bold.ttf') format('truetype');
 }
 @font-face {
     font-family:'junicodebolditalic';
     src: url('/estilos/font/junicode-boldItalic.ttf') format('truetype');
-}
+} */
 
 /* ------------------- header con navegador ------------------- */
 
-header{
+/* header{
     background-color: white;
     width: 100%;
     height: 150px;
@@ -23,7 +23,7 @@ header{
     top: 0px;
 }
 /* logo centrado en el header */
-.logo{
+/* .logo{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -32,9 +32,9 @@ header{
 header img{
     margin-top: 25px;
     width: 120px;
-}
+} */
 /* menu de navegacion horizontal y centrado en el header */
-.nav{
+/* .nav{
     font-family: 'junicodebold';
     list-style: none;
     font-weight: normal;
@@ -50,17 +50,17 @@ header img{
 .a{
     text-decoration: none;
     color: #3c7c0c;
-}
+} */ */
 /* cambio de color en el link de la pagina seleccionada */
-.seleccion{
+/* .seleccion{
     color: #845ca4;
     border-bottom: 1px solid #845ca4;
-}
+} */
 
 /* ------------------- main de index ------------------- */
 
 /* banner */
-.banner{
+/* .banner{
     background-image: url(../medios/floresyplantasdeornato-2.png);
     height: 85vh;
     width: 100%;
@@ -79,12 +79,12 @@ header img{
     color: #3c7c0c;
     text-shadow: 3px 2px 3px rgba(126,124,118,0.72);
     display: flex;
-}
+} */
 
 /* ------ grid de index ------ */
 
 /* elementos hijos */
-main section h2{
+/* main section h2{
     grid-area: titulo;
 }
 main section img{
@@ -97,9 +97,9 @@ main section p{
 }
 main section h3{
     grid-area: titulo2;
-}
+} */
 /* grid */
-.grid-index-contenedor{
+/* .grid-index-contenedor{
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: 200px 650px;
@@ -124,9 +124,9 @@ main section h3{
     justify-items: center;
     align-items: center;
     gap: 30px;
-}
+} */
 /* etiquetas hijos */
-.grid-index-hijo1{
+/* .grid-index-hijo1{
     width: 100%;
     height: 200px;
     display: flex;
@@ -172,11 +172,11 @@ section ul li{
     font-family: 'montserrat', sans-serif;
     font-size: 2rem;
     padding: 10px;
-}
+} */
 
 /* ------ grid de paginas ------ */
 /* elementos hijos */
-main section div h3{
+/* main section div h3{
     grid-area: titulo;
 }
 main section div img{
@@ -189,7 +189,7 @@ main section div div{
     grid-area: filtro;
 }
 /* grid */
-.grid-paginas-contenedor{
+/* .grid-paginas-contenedor{
     display: grid;
     grid-template-columns: repeat(5, 15%);
     grid-template-rows: 100px 250px;
@@ -202,8 +202,8 @@ main section div div{
     align-items: center;
     gap: 50px;
     margin: 50px;
-}
-.grid-paginas-contenedor2{
+} */
+/* .grid-paginas-contenedor2{
     display: grid;
     grid-template-columns: repeat(5, 15%);
     grid-template-rows: 100px 250px;
@@ -216,10 +216,10 @@ main section div div{
     align-items: center;
     gap: 50px;
     margin: 50px;
-}
+} */
 /* etiquetas hijos */
 /* filtros */
-.grid-paginas-hijo1{
+/* .grid-paginas-hijo1, .grid-paginas-hijo5{
     display: flex;
 }
 .grid-paginas-hijo2{
@@ -245,11 +245,11 @@ main section div div{
 }
 .grid-paginas-hijo4 p{
     font-size: 1.3rem;
-}
+} */
 
 /* -------------------nosotros------------------- */
 
-.nosotros{
+/* .nosotros{
     display: grid;
     grid-template-columns: repeat(2, 40%);
     grid-template-rows: 300px 500px;
@@ -270,7 +270,7 @@ main section div div{
 .nosotros img{
     width: 100%;
     height: 100%;
-}
+} */
 
 /* -------------------contacto------------------- */
 main section{
@@ -348,7 +348,7 @@ form{
 }
 
 /* -------------------pie de pagina------------------- */
-footer p{
+/* footer p{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -365,7 +365,7 @@ footer p{
 
 footer img{
     width: 50px;
-}
+} */
 
 /* -------------------media queries------------------- */
 /* mobile */

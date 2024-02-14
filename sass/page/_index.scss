@@ -1,0 +1,101 @@
+main{
+    .banner{
+        background-image: url(../medios/floresyplantasdeornato-2.png);
+        height: 85vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        h1{
+            height: 50vh;
+            font-family: $font-italic;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+            color: #3c7c0c;
+            text-shadow: 3px 2px 3px rgba(126,124,118,0.72);
+            display: flex;
+        }
+    }
+    .grid-index-contenedor{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 200px 650px;
+        grid-template-areas: 
+        "img titulo"
+        "img texto";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        gap: 30px;
+        .grid-index-hijo1{
+            grid-area: titulo;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'junicodebolditalic';
+            font-style: normal;
+            font-size: 4.5rem;
+            text-align: center;
+            color: #899676;
+        }
+        .grid-index-hijo2{
+            grid-area: img;
+            height: 100%;
+            display: flex;
+        }
+        .grid-index-hijo3{
+            grid-area: texto;
+            width: 100%;
+            height: 650px;
+            display: flex;
+            font-size: 2rem;
+        }
+    }
+    .grid-index-contenedor2{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 200px 650px;
+        grid-template-areas: 
+        "titulo2 img"
+        "texto   img";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        gap: 30px;
+        .grid-index-hijo4{
+            grid-area: titulo2;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-items: center;
+            align-items: flex-end;
+            font-family: 'junicodebold';
+            font-style: normal;
+            font-size: 3rem;
+            color: #3c7c0c;
+        }
+        .grid-index-hijo5{
+            grid-area: img;
+            height: 100%;
+            display: flex;
+        }
+        .grid-index-hijo6{
+            grid-area: texto;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 50px;
+            li{
+                font-family: 'montserrat', sans-serif;
+                font-size: 2rem;
+                padding: 10px;
+            }
+        }
+    }
+}
