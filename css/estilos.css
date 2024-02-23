@@ -214,191 +214,8 @@ main .grid-paginas-contenedor .grid-paginas-hijo4 {
   grid-area: filtro;
   width: 100%;
   height: 100%;
-  border-width: 5px;
-  border-color: #3c7c0c;
-  border-style: solid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-main .grid-paginas-contenedor .grid-paginas-hijo4 img {
-  width: 7vw;
-  height: 7vw;
-}
-main .grid-paginas-contenedor .grid-paginas-hijo4 h3 {
-  font-size: 1.3rem;
-}
-main .grid-paginas-contenedor2 {
-  display: grid;
-  grid-template-columns: repeat(5, 15%);
-  grid-template-rows: 100px 250px;
-  grid-template-areas: "filtro  titulo titulo img img" "filtro  texto texto  img img";
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  gap: 50px;
-  margin: 50px;
-}
-main .grid-paginas-contenedor2 .grid-paginas-hijo1 {
-  grid-area: titulo;
-  display: flex;
-}
-main .grid-paginas-contenedor2 .grid-paginas-hijo2 {
-  grid-area: img;
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-main .grid-paginas-contenedor2 .grid-paginas-hijo3 {
-  grid-area: texto;
-  display: flex;
-}
-main .grid-paginas-contenedor2 .grid-paginas-hijo4 {
-  grid-area: filtro;
-  width: 100%;
-  height: 100%;
-  border-width: 5px;
-  border-color: #3c7c0c;
-  border-style: solid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-main .grid-paginas-contenedor2 .grid-paginas-hijo4 img {
-  width: 7vw;
-  height: 7vw;
-}
-main .grid-paginas-contenedor2 .grid-paginas-hijo4 h3 {
-  font-size: 1.3rem;
-}
-
-main .grid-paginas-contenedor {
-  display: grid;
-  grid-template-columns: repeat(5, 15%);
-  grid-template-rows: 100px 250px;
-  grid-template-areas: "img img titulo titulo filtro" "img img  texto texto  filtro";
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  gap: 50px;
-  margin: 50px;
-}
-main .grid-paginas-contenedor .grid-paginas-hijo1 {
-  grid-area: titulo;
-  display: flex;
-}
-main .grid-paginas-contenedor .grid-paginas-hijo2 {
-  grid-area: img;
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-main .grid-paginas-contenedor .grid-paginas-hijo3 {
-  grid-area: texto;
-  display: flex;
-}
-main .grid-paginas-contenedor .grid-paginas-hijo4 {
-  grid-area: filtro;
-  width: 100%;
-  height: 100%;
-  border-width: 5px;
-  border-color: #3c7c0c;
-  border-style: solid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-main .grid-paginas-contenedor .grid-paginas-hijo4 img {
-  width: 7vw;
-  height: 7vw;
-}
-main .grid-paginas-contenedor .grid-paginas-hijo4 h3 {
-  font-size: 1.3rem;
-}
-main .grid-paginas-contenedor2 {
-  display: grid;
-  grid-template-columns: repeat(5, 15%);
-  grid-template-rows: 100px 250px;
-  grid-template-areas: "filtro  titulo titulo img img" "filtro  texto texto  img img";
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  gap: 50px;
-  margin: 50px;
-}
-main .grid-paginas-contenedor2 .grid-paginas-hijo1 {
-  grid-area: titulo;
-  display: flex;
-}
-main .grid-paginas-contenedor2 .grid-paginas-hijo2 {
-  grid-area: img;
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-main .grid-paginas-contenedor2 .grid-paginas-hijo3 {
-  grid-area: texto;
-  display: flex;
-}
-main .grid-paginas-contenedor2 .grid-paginas-hijo4 {
-  grid-area: filtro;
-  width: 100%;
-  height: 100%;
-  border-width: 5px;
-  border-color: #3c7c0c;
-  border-style: solid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-main .grid-paginas-contenedor2 .grid-paginas-hijo4 img {
-  width: 7vw;
-  height: 7vw;
-}
-main .grid-paginas-contenedor2 .grid-paginas-hijo4 h3 {
-  font-size: 1.3rem;
-}
-
-main .grid-paginas-contenedor {
-  display: grid;
-  grid-template-columns: repeat(5, 15%);
-  grid-template-rows: 100px 250px;
-  grid-template-areas: "img img titulo titulo filtro" "img img  texto texto  filtro";
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  gap: 50px;
-  margin: 50px;
-}
-main .grid-paginas-contenedor .grid-paginas-hijo1 {
-  grid-area: titulo;
-  display: flex;
-}
-main .grid-paginas-contenedor .grid-paginas-hijo2 {
-  grid-area: img;
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-main .grid-paginas-contenedor .grid-paginas-hijo3 {
-  grid-area: texto;
-  display: flex;
-}
-main .grid-paginas-contenedor .grid-paginas-hijo4 {
-  grid-area: filtro;
-  width: 100%;
-  height: 100%;
-  border-width: 5px;
-  border-color: #3c7c0c;
-  border-style: solid;
+  border-radius: 28px 28px 28px 28px;
+  border: 7px solid #3c7c0c;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -508,49 +325,21 @@ main section .formulario .contacto-form-1 {
 }
 main section .formulario .contacto-form-2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 60%;
   font-size: 1.2rem;
   font-family: "montserrat";
+  justify-content: space-evenly;
 }
 main section .formulario .contacto-form-3 {
   display: flex;
-  flex-direction: column;
-  width: 60%;
-  font-size: 1.2rem;
-  font-family: "montserrat";
-}
-main section .formulario .contacto-form-4 {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  font-size: 1.2rem;
-  font-family: "montserrat";
-}
-main section .formulario .contacto-form-5 {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  font-size: 1.2rem;
-  font-family: "montserrat";
-}
-main section .formulario .contacto-form-6 {
-  display: flex;
   flex-direction: row;
   width: 60%;
   font-size: 1.2rem;
   font-family: "montserrat";
   justify-content: space-evenly;
 }
-main section .formulario .contacto-form-7 {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  font-size: 1.2rem;
-  font-family: "montserrat";
-  justify-content: space-evenly;
-}
-main section .formulario .contacto-form-7 input {
+main section .formulario .contacto-form-3 input {
   width: 100px;
 }
 
