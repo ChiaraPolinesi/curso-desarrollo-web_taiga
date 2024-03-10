@@ -108,9 +108,6 @@ main .banner h1 {
 }
 main .grid-index-contenedor {
   display: grid;
-  grid-template-columns: 40% 40%;
-  grid-template-rows: 200px 650px;
-  grid-template-areas: "img titulo" "img texto";
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -135,19 +132,21 @@ main .grid-index-contenedor .grid-index-hijo2 {
   width: 100%;
   height: 100%;
   display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+main .grid-index-contenedor .grid-index-hijo2 img {
+  object-fit: cover;
 }
 main .grid-index-contenedor .grid-index-hijo3 {
   grid-area: texto;
   width: 100%;
-  height: 650px;
+  height: auto;
   display: flex;
   font-size: 2rem;
 }
 main .grid-index-contenedor2 {
   display: grid;
-  grid-template-columns: 40% 40%;
-  grid-template-rows: 200px 650px;
-  grid-template-areas: "titulo2 img" "texto   img";
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -160,7 +159,7 @@ main .grid-index-contenedor2 .grid-index-hijo4 {
   height: 200px;
   display: flex;
   justify-items: center;
-  align-items: flex-end;
+  align-items: center;
   font-family: "junicodebold";
   font-style: normal;
   font-size: 3rem;
@@ -171,6 +170,11 @@ main .grid-index-contenedor2 .grid-index-hijo5 {
   width: 100%;
   height: 100%;
   display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+main .grid-index-contenedor2 .grid-index-hijo5 img {
+  object-fit: cover;
 }
 main .grid-index-contenedor2 .grid-index-hijo6 {
   grid-area: texto;
@@ -313,7 +317,6 @@ main section {
 }
 main section .formulario {
   color: aliceblue;
-  width: 40%;
   height: 600px;
   border-radius: 30px 30px 30px 30px;
   background-color: #3c7c0c;
@@ -351,7 +354,22 @@ main section .formulario .contacto-form-3 input {
   width: 100px;
 }
 
-@media only screen and (max-width: 580px) {
+@media screen and (min-width: 650px) {
+  main .grid-index-contenedor {
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 200px auto;
+    grid-template-areas: "img titulo" "img texto";
+  }
+  main .grid-index-contenedor2 {
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 200px auto;
+    grid-template-areas: "titulo2 img" "texto   img";
+  }
+  main section .formulario {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 650px) {
   header {
     height: 100px;
   }
@@ -364,7 +382,7 @@ main section .formulario .contacto-form-3 input {
   .grid-index-contenedor {
     display: grid;
     grid-template-columns: 90%;
-    grid-template-rows: 100px 450px 150px 850px;
+    grid-template-rows: 100px 450px 150px auto;
     grid-template-areas: "img" "img" "titulo" "texto";
     justify-content: center;
     align-content: center;
@@ -374,14 +392,14 @@ main section .formulario .contacto-form-3 input {
   }
   .grid-index-contenedor .grid-index-hijo3 {
     width: 100%;
-    height: 850px;
+    height: auto;
     display: flex;
     align-items: flex-start;
   }
   .grid-index-contenedor2 {
     display: grid;
     grid-template-columns: 90%;
-    grid-template-rows: 100px 450px 100px 800px;
+    grid-template-rows: 100px 450px 100px auto;
     grid-template-areas: "img" "img" "titulo2" "texto";
     justify-content: center;
     align-content: center;
@@ -408,6 +426,9 @@ main section .formulario .contacto-form-3 input {
   }
   .grid-paginas-contenedor2 .grid-paginas-hijo4 {
     justify-content: center;
+  }
+  main section .formulario {
+    width: 80%;
   }
 }
 
