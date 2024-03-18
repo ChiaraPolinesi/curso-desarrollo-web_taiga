@@ -1,11 +1,6 @@
 main{
     .nosotros{
         display: grid;
-        grid-template-columns: repeat(2, 40%);
-        grid-template-rows: 300px 500px;
-        grid-template-areas: 
-        "titulo img"
-        "texto  img";
         justify-content: center;
         align-content: center;
         justify-items: center;
@@ -24,6 +19,11 @@ main{
             grid-area: img;
             width: 100%;
             height: 100%;
+            overflow: hidden;
+            justify-content: center;
+            img{
+                object-fit: cover;
+            }
         }
     }
 }

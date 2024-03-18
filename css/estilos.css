@@ -190,9 +190,6 @@ main .grid-index-contenedor2 .grid-index-hijo6 li {
 
 main .grid-paginas-contenedor {
   display: grid;
-  grid-template-columns: repeat(5, 15%);
-  grid-template-rows: 100px 250px;
-  grid-template-areas: "img img titulo titulo filtro" "img img  texto texto  filtro";
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -206,9 +203,14 @@ main .grid-paginas-contenedor .grid-paginas-hijo1 {
 }
 main .grid-paginas-contenedor .grid-paginas-hijo2 {
   grid-area: img;
+  overflow: hidden;
   display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
+}
+main .grid-paginas-contenedor .grid-paginas-hijo2 img {
+  object-fit: cover;
 }
 main .grid-paginas-contenedor .grid-paginas-hijo3 {
   grid-area: texto;
@@ -225,6 +227,7 @@ main .grid-paginas-contenedor .grid-paginas-hijo4 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 main .grid-paginas-contenedor .grid-paginas-hijo4 img {
   width: 7vw;
@@ -237,9 +240,6 @@ main .grid-paginas-contenedor .grid-paginas-hijo4 h3 {
 }
 main .grid-paginas-contenedor2 {
   display: grid;
-  grid-template-columns: repeat(5, 15%);
-  grid-template-rows: 100px 250px;
-  grid-template-areas: "filtro  titulo titulo img img" "filtro  texto texto  img img";
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -254,6 +254,8 @@ main .grid-paginas-contenedor2 .grid-paginas-hijo1 {
 main .grid-paginas-contenedor2 .grid-paginas-hijo2 {
   grid-area: img;
   display: flex;
+  overflow: hidden;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -272,6 +274,7 @@ main .grid-paginas-contenedor2 .grid-paginas-hijo4 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 main .grid-paginas-contenedor2 .grid-paginas-hijo4 img {
   width: 7vw;
@@ -285,9 +288,6 @@ main .grid-paginas-contenedor2 .grid-paginas-hijo4 h3 {
 
 main .nosotros {
   display: grid;
-  grid-template-columns: repeat(2, 40%);
-  grid-template-rows: 300px 500px;
-  grid-template-areas: "titulo img" "texto  img";
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -307,6 +307,11 @@ main .nosotros .hijo-nosotros3 {
   grid-area: img;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  justify-content: center;
+}
+main .nosotros .hijo-nosotros3 img {
+  object-fit: cover;
 }
 
 main section {
@@ -368,6 +373,21 @@ main section .formulario .contacto-form-3 input {
   main section .formulario {
     width: 40%;
   }
+  main .grid-paginas-contenedor {
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: auto;
+    grid-template-areas: "img img titulo titulo filtro" "img img  texto texto  filtro";
+  }
+  main .grid-paginas-contenedor2 {
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: auto;
+    grid-template-areas: "filtro  titulo titulo img img" "filtro  texto texto  img img";
+  }
+  main .nosotros {
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: 300px 500px;
+    grid-template-areas: "titulo img" "texto  img";
+  }
 }
 @media only screen and (max-width: 650px) {
   header {
@@ -409,26 +429,25 @@ main section .formulario .contacto-form-3 input {
   }
   .grid-paginas-contenedor {
     grid-template-columns: 100%;
-    grid-template-rows: 80px 80px 300px 350px;
+    grid-template-rows: 80px 80px auto auto;
     grid-template-areas: "titulo" "filtro" "img" "texto";
     gap: 40px;
     margin: 20px 30px;
   }
-  .grid-paginas-contenedor .grid-paginas-hijo4 {
-    justify-content: center;
-  }
   .grid-paginas-contenedor2 {
     grid-template-columns: 100%;
-    grid-template-rows: 80px 80px 250px 300px;
+    grid-template-rows: auto;
     grid-template-areas: "titulo" "filtro" "img" "texto";
     gap: 40px;
     margin: 20px 20px;
   }
-  .grid-paginas-contenedor2 .grid-paginas-hijo4 {
-    justify-content: center;
-  }
   main section .formulario {
     width: 80%;
+  }
+  main .nosotros {
+    grid-template-columns: 90%;
+    grid-template-rows: 200px auto;
+    grid-template-areas: "titulo" "texto" "img";
   }
 }
 
